@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .overflow-wrap-anywhere {
+    overflow-wrap: anywhere;
+  }
+  
+  .text-shadow-\[2px_2px_4px_\#000000\] {
+    text-shadow: 2px 2px 4px #000000;
+  }
+}
+
+/* Custom scrollbar styles */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgb(252, 103, 4);
+  border-radius: 20px;
+  border: 1px solid #f1f2f3;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  border-radius: 20px;
+  background-color: rgb(113, 114, 114);
+}
