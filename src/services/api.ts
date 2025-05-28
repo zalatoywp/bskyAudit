@@ -1,4 +1,4 @@
-'use server';
+'use server'
 import { SearchResult, UserProfile, FollowerInfo, BlockedUser, UserStats } from '../types';
 
 const BSKY_API = 'https://public.api.bsky.app/xrpc';
