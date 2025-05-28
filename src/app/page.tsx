@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
+import { Suspense } from 'react';
 import Header from '../components/Header';
 import SearchBar from '../components/SearchBar';
 import ProfileCard from '../components/ProfileCard';
@@ -87,7 +88,9 @@ export default function Home() {
   return (
     <div className="bg-[#202027] min-h-screen text-[#cecece] font-sans">
       <Header />
-      <SearchBar onSelectUser={handleSelectUser} />
+      <Suspense>
+        <SearchBar onSelectUser={handleSelectUser} />
+      </Suspense>
       
       {loading ? (
         <LoadingIndicator />
